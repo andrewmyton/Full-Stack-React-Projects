@@ -1,0 +1,19 @@
+mongodb+srv://andrewmyton_db_user:sarFyeet3FTRoMMC@cluster0.hveic7q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+VITE_BACKEND_URL="https://probable-sniffle-wrrwwjjjqv97hv9jv-3001.app.github.dev/api/v1"
+
+docker build --platform linux/amd64 --build-arg "VITE_BACKEND_
+URL=https://probable-sniffle-wrrwwjjjqv97hv9jv-3001.app.github.dev/api/v1/api/v1 -t blog-frontend .
+
+
+docker tag ch5-blog-frontend amyton7/blog-frontend
+docker push amyton7/blog-frontend
+
+docker tag ch5-blog-backend amyton7/blog-backend
+docker push amyton7/blog-backend
+
+
+
+docker build --platform linux/amd64 --build-arg "VITE_BACKEND_URL=https://blog-backend-1058475236997.us-central1.run.app/api/v1" -t blog-frontend .
+
+docker tag blog-frontend amyton7/blog-frontend
+docker push amyton7/blog-frontend
