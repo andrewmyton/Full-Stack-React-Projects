@@ -24,5 +24,8 @@
     {
       "files": ["*.js", "*.jsx"]
     }
-  ]
+  ],
+   "plugins": [
+        "react"
+      ]
 }
